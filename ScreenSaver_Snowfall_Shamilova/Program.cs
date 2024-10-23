@@ -1,10 +1,4 @@
-﻿using Microsoft.Xna.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace ScreenSaver_Snowfall_Shamilova
+﻿namespace ScreenSaver_Snowfall_Shamilova
 {
     static class Program
     {

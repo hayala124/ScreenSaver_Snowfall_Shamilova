@@ -43,18 +43,15 @@
     <Reference Include="FNA">
       <HintPath>.\FNA.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="Screen.cs" />
-    <Compile Include="Snowflake.cs" />
-    <Compile Include="Utilities\Camera.cs" />
-    <Compile Include="Utilities\Global.cs" />
+    <Compile Include="AllMainClasses\Screen.cs" />
+    <Compile Include="AllMainClasses\Snowflake.cs" />
+    <Compile Include="AllMainClasses\SnowflakeHelper.cs" />
     <Compile Include="Utilities\Input.cs" />
-    <Compile Include="Utilities\Resolution.cs" />
-    <Compile Include="Utilities\TextureLoader.cs" />
-    <Compile Include="Utilities\XmlHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\forest.png">
@@ -64,6 +61,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /y /d  "$(ProjectDir)fnalibs\x64\*.dll" "$(ProjectDir)$(OutDir)"</PostBuildEvent>
